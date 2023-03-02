@@ -12,13 +12,14 @@ spec:
   sources:
   - repoURL: 'https://github.com/knowre-junhyung-lee/argocd-helm-values.git'
     targetRevision: HEAD
+    path: test-service/values/mynginx
     ref: values
   - repoURL: https://github.com/knowre-junhyung-lee/argocd-test.git
     targetRevision: HEAD
     path: charts/mynginx
     helm:
       valueFiles:
-      - $values/values.yaml
+      - $values/dev-values-mynginx.yaml
 
   destination:
     server: https://kubernetes.default.svc
