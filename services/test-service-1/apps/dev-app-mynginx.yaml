@@ -16,7 +16,7 @@ spec:
     ref: values
   - repoURL: https://github.com/knowre-junhyung-lee/argocd-test.git
     targetRevision: HEAD
-    path: charts/mynginx
+    path: applications/mynginx
     helm:
       valueFiles:
       - $values/mynginx.yaml
