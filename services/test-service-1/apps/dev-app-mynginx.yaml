@@ -10,17 +10,17 @@ metadata:
 spec:
   project: default
   sources:
-  - repoURL: 'https://github.com/knowre-junhyung-lee/argocd-helm-values.git'
-    targetRevision: HEAD
-    path: environments/develop/apne2
-    ref: values
   - repoURL: https://github.com/knowre-junhyung-lee/argocd-test.git
     targetRevision: HEAD
     path: applications/mynginx
     helm:
       valueFiles:
       - $values/mynginx.yaml
-
+  - repoURL: 'https://github.com/knowre-junhyung-lee/argocd-helm-values.git'
+    targetRevision: HEAD
+    path: environments/develop/apne2
+    ref: values
+    
   destination:
     server: https://kubernetes.default.svc
     namespace: mynginx
