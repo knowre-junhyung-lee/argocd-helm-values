@@ -15,10 +15,10 @@ spec:
     path: applications/mynginx
     helm:
       valueFiles:
-      - $values/mynginx.yaml
+      - $values
   - repoURL: 'https://github.com/knowre-junhyung-lee/argocd-helm-values.git'
     targetRevision: HEAD
-    path: environments/develop/apne2
+    path: environments/develop/apne2/mynginx.yaml
     ref: values
     
   destination:
