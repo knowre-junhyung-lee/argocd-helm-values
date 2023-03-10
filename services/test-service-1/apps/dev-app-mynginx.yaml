@@ -12,7 +12,7 @@ spec:
   sources:
   - repoURL: 'https://github.com/knowre-junhyung-lee/argocd-helm-values.git'
     targetRevision: HEAD
-    path: environments/develop/apne2/
+    path: environments/develop/apne2/mynginx
     ref: values
   - repoURL: https://github.com/knowre-junhyung-lee/argocd-test.git
     targetRevision: HEAD
