@@ -1,1 +1,3 @@
-ff
+image:
+  reposotiry: nginx
+  tag: latest
